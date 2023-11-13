@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject private var AudioPlayer = AudioPlayer_()
-    // con () chiamo l'init della classe AudioPlayer_
+    /// con () chiamo l'init della classe AudioPlayer_
     var body: some View {
         GameView()
             .environmentObject(AudioPlayer)
