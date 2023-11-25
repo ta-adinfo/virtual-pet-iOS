@@ -60,9 +60,15 @@ struct GameView: View {
                 }
                 Spacer()
                 HStack {
-                    Button_(btn_action: pet_view_model.food, btn_image: "sushi")
+                    Button_(btn_action: {
+                        pet_view_model.food()
+                        AudioP.btn_sound_()
+                    }, btn_image: "sushi")
                     Spacer()
-                    Button_(btn_action: pet_view_model.drink, btn_image: "milk")
+                    Button_(btn_action: {
+                        pet_view_model.drink()
+                        AudioP.btn_sound_()
+                    }, btn_image: "milk")
                 }
 
                 .padding(.horizontal, 50)
@@ -76,6 +82,6 @@ struct GameView: View {
 }
 
 #Preview {
-    GameView()
+    ContentView()
         .preferredColorScheme(.dark)
 }

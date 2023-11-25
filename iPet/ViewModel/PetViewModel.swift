@@ -32,7 +32,7 @@ extension GameView {
             saveData()
         }
 
-        // resetto nome con uno casuale quando muore DA FARE
+        // resetto nome con uno casuale quando muore ! DA FARE !
         func resetName() {}
 
         // età in ore
@@ -40,6 +40,5 @@ extension GameView {
             let secondsInAnHour = 3600
             return pet.age / secondsInAnHour
         }
-        
     }
 }

@@ -4,12 +4,11 @@ import SwiftUI
 struct Button_: View {
     @State var btn_action: () -> Void
     @State var btn_image: String
-    @EnvironmentObject var AudioP : AudioPlayer_
+
     var body: some View {
         Button(action: {
             btn_action()
-            AudioP.btn_sound_()
-            
+
         }, label: {
             Image(btn_image)
                 .resizable()
