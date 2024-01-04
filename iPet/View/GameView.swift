@@ -46,14 +46,14 @@ struct GameView: View {
                 .padding(50)
 
                 HStack {
-                    Text("体力   ")
+                    Text("hp   ")
                     Text(pet_view_model.pet.hunger)
                         .foregroundStyle(Color(.systemRed))
                     Spacer()
                 }
                 .padding(.bottom, 10)
                 HStack {
-                    Text("のど   ")
+                    Text("happiness   ")
                     Text(pet_view_model.pet.thirsty)
                         .foregroundStyle(Color(.systemYellow))
                     Spacer()
